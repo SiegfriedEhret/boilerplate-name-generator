@@ -4,6 +4,12 @@ Generates a boilerplate name !
 
 [demo](http://dev.ehret.me/boilerplate-name-generator/)
 
+## why ?
+
+![](boilerplate.png)
+
+Seriously...
+
 ## how to use
 
 Copy and paste the generated name and create your boilerplate !
