@@ -10,6 +10,12 @@ Generates a boilerplate name !
 
 Seriously...
 
+## seriously, why ??
+
+- Because the frontend things are getting over complicated.
+- Because there are too many boilerplates already but I can help you add more :smile:
+- For the lulz.
+
 ## how to use
 
 Copy and paste the generated name and create your boilerplate !
