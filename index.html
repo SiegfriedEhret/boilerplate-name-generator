@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Boilerplate name generator</title>
+    <style media="screen">
+    html {
+      box-sizing: border-box;
+      height: 100%;
+      max-height: 100%;
+      font-size: 100%;
+
+      background: rgba(255, 51, 153, .1);
+      background-image: linear-gradient(-45deg,rgba(255,255,255,.2)25%,transparent 25%,transparent 50%,rgba(255,255,255,.2)50%,rgba(255,255,255,.2)75%,transparent 75%,transparent);
+      background-size: 50px 50px;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      border-top: 5px solid #f39;
+      font-size: 1rem;
+      font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: initial;
+      text-decoration: none;
+      background: linear-gradient(#f39,#f39) bottom no-repeat;
+      background-size: 100% 2px;
+      transition: background-size .1s, color .15s;
+      padding: 4px 2px;
+    }
+    a:focus,
+    a:hover {
+      background-size: 100% 100%;
+      color: #fff;
+    }
+    .main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h1 {
+      color: #f39;
+      text-align: center;
+      font-size: 3rem;
+    }
+    h2 {
+      text-align: center;
+    }
+    .footer {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <h1>boilerplate name generator</h1>
+        <h2 class="name" id="name">... magic !</h2>
+      </div>
+    </main>
+    <footer class="footer">
+      Made for the lulz by <a href="http://ehret.me">Siegfried Ehret</a>,
+      fork me on <a href="https://gitlab.com/SiegfriedEhret/boilerplate-name-generator">Gitlab</a> or <a href="https://github.com/SiegfriedEhret/boilerplate-name-generator">Github</a> (<a href="https://gitlab.com/SiegfriedEhret/gitzytout">gitzytout</a> powered !)
+    </footer>
+
+    <script type="text/javascript">
+      {
+        const frameworks = [
+          'angular-1.x',
+          'angular-2.x',
+          'aurelia',
+          'backbonejs',
+          'ember',
+          'polymer',
+          'react',
+          'vuejs'
+        ];
+
+        const libs = [
+          'flux',
+          'jquery',
+          'redux',
+          'zepto'
+        ];
+
+        const preStyles = [
+          'less',
+          'sass',
+          'stylus'
+        ];
+
+        const postStyles = [
+          'autoprefixer',
+          'pleeease',
+          'postcss'
+        ];
+
+        const compile = [
+          'babel',
+          'coffeescript',
+          'traceur',
+          'typescript'
+        ];
+
+        const bundle = [
+          'browserify',
+          'jspm',
+          'webpack'
+        ];
+
+        const build = [
+          'broccoli',
+          'brunch',
+          'fly',
+          'grunt',
+          'gulp',
+          'npm-scripts'
+        ];
+
+        document.getElementById('name').innerHTML = [frameworks, libs, preStyles, postStyles, compile, bundle, build].map(x => x[Math.floor(Math.random()*x.length)]).join('-') + '-boilerplate';
+
+      }
+    </script>
+  </body>
+</html>
