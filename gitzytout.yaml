@@ -1,3 +1,4 @@
 main: git@gitlab.com:SiegfriedEhret/boilerplate-name-generator.git
 mirrors:
 - git@github.com:SiegfriedEhret/boilerplate-name-generator.git
+- git@github.com:WTF-DD/boilerplate-name-generator.git
